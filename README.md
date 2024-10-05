@@ -35,6 +35,13 @@ This project is a simple Employee Tracker application that allows users to colle
 5. **trackEmployeeData:**
    - Orchestrates the workflow: collects employees, calculates and displays the average salary, selects and displays a random employee, sorts the employees, and finally displays them in the table.
 
+
+### Screenshots: 
+![alt text](<Screenshot 2024-10-05 at 1.25.49 PM.png>)
+
+### Deployed Link 
+https://muktadir1090.github.io/ass3EmpTracker/
+
 ### Event Listener
 
 - **addEmployeesBtn:** The button with the ID `add-employees-btn` triggers the employee data collection and displays the results when clicked.

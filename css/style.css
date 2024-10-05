@@ -1,0 +1,109 @@
+/* Universal selector to apply box-sizing rule to all elements and their ::before and ::after pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Resetting margin and padding for html, body, and wrapper to ensure they take full height and have no unwanted spacing */
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling with sans-serif font and light background color */
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+/* Wrapper padding for top and sides */
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Header styles: centered text, padding for spacing, and text color using HSL values */
+header {
+  text-align: center;
+  padding: 40px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+}
+
+/* Styling h2 elements for centered alignment */
+h2 {
+  text-align: center;
+}
+
+/* Card component styling with white background, border radius, shadow effect, and color adjustments */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+/* Card header after pseudo-element to create a separator line */
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+/* Minimum height for the card body to ensure space is maintained */
+.card-body {
+  min-height: 100px;
+}
+
+/* Styling for the table element: full width, no spacing between cells, and collapsing borders */
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* Table cells centered text and border around each cell */
+td {
+  text-align: center;
+  border: 4px solid black;
+}
+
+/* Zebra striping effect for table rows: even rows get a background color */
+tbody tr:nth-child(even) {
+  background-color: hsl(223, 64%, 90%);
+}
+
+/* Card footer centered text */
+.card-footer {
+  text-align: center;
+}
+
+/* Card footer before pseudo-element to create a separator line above it */
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+/* Card footer after pseudo-element to clear floats */
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Button styles: no border​⬤

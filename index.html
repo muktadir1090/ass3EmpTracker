@@ -2,41 +2,67 @@
 <html lang="en">
 
 <head>
+  <!-- The document's character encoding is set to UTF-8 -->
   <meta charset="UTF-8" />
+  
+  <!-- This ensures the webpage is responsive and scales well on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Ensures compatibility with Internet Explorer browsers -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- The title of the webpage, which appears in the browser tab -->
   <title>Employee Payroll Tracker</title>
-  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Link to the external CSS file for styling -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+  <!-- Wrapper div to contain the entire content of the page -->
   <div class="wrapper">
+    
+    <!-- Header section containing the title of the application -->
     <header>
       <h1>Employee Payroll Tracker</h1>
     </header>
+    
+    <!-- A card component used to display the employee roster -->
     <div class="card">
+      
+      <!-- The card-header section, which holds the title "Employee Roster" -->
       <div class="card-header">
        <h2>Employee Roster</h2>
       </div>
+      
+      <!-- The card-body section, where the employee table is displayed -->
       <div class="card-body">
-       <table>
-        <thead>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Salary</th>
-          </tr>
-        </thead>
-        <tbody id="employee-table">
-        </tbody>
-       </table>
+        <!-- Table to display employee information -->
+        <table>
+          <thead>
+            <!-- Table header defining the columns: First Name, Last Name, and Salary -->
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <!-- The table body, where employee data will be dynamically inserted -->
+          <tbody id="employee-table">
+          </tbody>
+        </table>
       </div>
+      
+      <!-- The card-footer section containing a button to add new employees -->
       <div class="card-footer">
         <button id="add-employees-btn" class="btn">Add Employees</button>
       </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+      
+    </div> <!-- End of card -->
+  </div> <!-- End of wrapper -->
+  
+  <!-- External JavaScript file to handle functionality -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
